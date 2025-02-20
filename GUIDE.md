@@ -1,157 +1,156 @@
-# eBank – მობაილ ბანკი
+# eBank – Mobile Bank
 
-**eBank** არის მობაილ ბანკი, რომელიც მომხმარებელს სთავაზობს მრავალფეროვან ფუნქციონალს.  
-საწყის ეტაპზე აუცილებელია რეგისტრაციის გავლა ან სისტემაში შესვლა არსებული ანგარიშით.
-
----
-
-# პროექტის აღწერა
-
-
-## 📝 1. რეგისტრაცია
-
-რეგისტრაციის დროს მომხმარებელმა უნდა შეიყვანოს შემდეგი მონაცემები:
-- **ბარათის მფლობელის სახელი**  
-- **პირადი ნომერი**  
-- **ტელეფონის ნომერი**  
-- **მომხმარებლის სახელი**  
-- **პაროლი** (უნდა აკმაყოფილებდეს გარკვეულ მოთხოვნებს)
-
-რეგისტრაციის დასრულების შემდეგ მომხმარებელს **ავტომატურად უგენერირდება**:
-- ბარათის ვადა (4 წელი შექმნის დღიდან)  
-- შემთხვევითი ბარათის ნომერი
-- სამციფრა CVV კოდი  
-- ანგარიშის ნომერი ფორმატით: `GE##EB################`  
-- უნიკალური თრომეტ სიმბოლოიანი ID
-- 1000 ლარი ბალანსზე
+**eBank** is a mobile banking application that offers users a variety of features.
+At the initial stage, users must register or log in with an existing account.
 
 ---
 
-## 🔑 2. შესვლა
+# Project Description
 
-მომხმარებელი სისტემაში შედის წინასწარ შექმნილი **მომხმარებლის სახელისა და პაროლის** საშუალებით.  
-შესვლის შემდეგ ეკრანზე ჩნდება:
-- ბარათზე არსებული თანხა (ლარში)  
-- ბარათის ანგარიშის ნომერი
-- სხვადასხვა ფუნქციების მენიუ:
 
----
+## 📝 1. Registration
 
-### 📋 2.1. კონვერტაცია
-- თანხის გადაყვანა სასურველ ვალუტაში საქართველოს ეროვნული ბანკის მიმდინარე ვალუტის კურსით
+During registration, users must enter the following information:
+- **Cardholder's Name**  
+- **Personal ID Number**  
+- **Phone Number**  
+- **Username**  
+- **Password** (must meet specific requirements)
 
----
-
-### 📊 2.2. ჩემი ფინანსები
-- გასავლისა და შემოსავლის ნახვა შემდეგი პერიოდებისთვის:
-  - ბოლო **1 თვე**
-  - ბოლო **3 თვე**
-  - ბოლო **6 თვე**
-  - ბოლო **12 თვე**
-  - ან ბარათის შექმნის დროიდან.
+After successful registration, the system **automatically generates**:
+- Card expiration date (4 years from the creation date)
+- Random card number
+- Three-digit CVV code
+- Account number in the format: `GE##EB################`  
+- Unique twelve-symbol alphanumeric ID
+- 1,000 GEL balance
 
 ---
 
-### 💳 2.3. ბარათის დეტალები
-- მომხმარებელი ხელახლა შეიყვანს პაროლს.  
-- ეკრანზე გამოდის ბარათის მონაცემები:
-  - **ბარათის ნომერი**  
-  - **ვადა**  
-  - **CVV კოდი**
+## 🔑 2. Login
+
+Users log into the system using their pre-registered **username and password**. After logging in, the screen displays:
+- Available balance on the card (in GEL)
+- Card account number
+- A menu with various functionalities
 
 ---
 
-### 💸 2.4. ტრანზაქციის განხორციელება
-ტრანზაქცია შესაძლებელია შემდეგი მეთოდებით:
-1. **ანგარიშის ნომრით**  
-2. **ტელეფონის ნომრით**  
-3. **პირადი ნომრით**
+### 📋 2.1. Currency Conversion
+- Convert money to the desired currency based on the current exchange rate of the National Bank of Georgia.
 
 ---
 
-### 🤝 2.5. თანხის მოთხოვნა
-- თანხის მოთხოვნა/მოთხოვნის მიღება სხვა მომხმარებლისგან
+### 📊 2.2. My Finances
+- View income and expenses for the following periods:
+  - Last **1 month**
+  - Last **3 months**
+  - Last **6 months**
+  - Last **12 months**
+  - From the date of card creation.
 
 ---
 
-# პროექტის დიზაინი
+### 💳 2.3. Card Details
+- The user re-enters the password.
+- The screen displays the card details:
+  - **Card number**  
+  - **Expiration Date**  
+  - **CVV code**
 
-**🛠️სისტემის სტრუქტურა დაყოფილია რამდენიმე ფოლდერსა და ფაილზე, რათა ყოველი მათგანი კონკრეტულ მიზანს ემსახურებოდეს🛠️**
+---
 
-1. **ძირითადი ფოლდერები და მათი დანიშნულება 📂**
+### 💸 2.4. Transaction Execution
+Transactions can be made using the following methods:
+1. **By account number**  
+2. **By phone number**  
+3. **By personal ID number**
+
+---
+
+### 🤝 2.5. Request Money
+- Request money from another user or receive a money request.
+
+---
+
+# Project Structure
+
+**🛠️The system structure is divided into several folders and files, each serving a specific purpose🛠️**
+
+1. **Main Folders and Their Purpose 📂**
 - ***database/ 💾***
-  - ეს ფოლდერი ინახავს ინფორმაციას, რომელიც დაკავშირებულია მომხმარებლებთან, ტრანზაქციებთან და მოთხოვნებთან. 🗂️
-ის შედგება სამი .json ფაილისგან.
+  - This folder stores information related to users, transactions, and requests. 🗂️
+It consists of three `.json` files:
 
-  - **users.json**: 📋 ინახავს რეგისტრირებული მომხმარებლების მონაცემებს (*ბალანსი, სახელი, ბარათის ნომერი, მოქმედების ვადა, CVV კოდი, ანგარიშის ნომერი, ტელეფონის ნომერი, პირადი ნომერი, მომხმარებლის სახელი, პაროლი*).
+  - **users.json**: 📋 Stores registered user data (*balance, name, card number, expiration date, CVV code, account number, phone number, personal ID, username, password*).
 
-  - **transactions.json**: 💸 ტრანზაქციების დეტალები (*თანხის გადამრიცხავი, თანხის მიმღები, თანხა, ტრანზაქციის თარიღი*).
+  - **transactions.json**: 💸 Stores transaction details (*sender, receiver, amount, transaction date*).
 
-  - **requests.json**: 📨 თანხის მოთხოვნების მონაცემები (*მოთხოვნის გამგზავნი, მოთხოვნის მიმღთები, თანხა, მესიჯი*).
+  - **requests.json**: 📨 Stores money request data (*request sender, request recipient, amount, message*).
 
 - ***models/ 🧩***
 
-  - ამ ფოლდერში ინახება ფაილები, რომლებიც პროექტის "ძირითადი ნაწილაკების" აღწერას უზრუნველყოფენ.
-**user.py**: 👤 აღწერს მომხმარებლის პროფილს (მაგ. სახელი, ბარათის ნომერი, ბალანსი).
-**transaction.py**: 🔄 აღწერს ტრანზაქციას (ერთი მომხმარებლიდან მეორეზე თანხის გადარიცხვა).
-**request.py**: 📩 აღწერს თანხის მოთხოვნას.
+  - This folder contains files describing the project's "core components."
+  - **user.py**: 👤 Defines user profiles (e.g., name, card number, balance).
+  - **transaction.py**: 🔄 Describes transactions (money transfers between users).
+  - **request.py**: 📩 Defines money requests.
 
 - ***services/ 🛠️***
 
-  - ეს ფოლდერი შეიცავს პროგრამის მთავარ ფუნქციონალს – სხვადასხვა სერვისს.
-  - **card_details.py**: 💳 გასცემს მომხმარებლის ბარათის დეტალებს (ბარათის ნომერი, მოქმედების ვადა, CVV კოდი).
-  - convert.py: 🔄 სასურველ ვალუტაში გარდაქმნა მიმდინარე ვალუტის კურსით.
-  - **finances.py**: 💰 გასცემს დეტალურ ინფორმაციას განხორციელებული ტრანზაქციების შესახებ სასურველ დროის პერიოდში.
-  - **make_transaction.py**: ✉️ უზრუნველყოფს ტრანზაქციის შესრულებას.
-money_request.py: 📨 მართავს თანხის მოთხოვნებს.
-  - **utils.py**: ⚙️ შეიცავს დამხმარე საერთო ლოგიკის მქონე ფუნქციებს, რომლებიც გამოიყენება სხვადსხვა ფაილში.
+  - This folder contains the main functionality of the application.
+  - **card_details.py**: 💳 Retrieves card details (card number, expiration date, CVV code).
+  - convert.py: 🔄 Converts currency based on the exchange rate.
+  - **finances.py**: 💰 Provides financial details for a selected period.
+  - **make_transaction.py**: ✉️ Handles transaction execution.
+  - **money_request.py**: 📨 Manages money requests.
+  - **utils.py**: ⚙️ Contains helper functions used across different files.
 
-2. **სხვა ფაილები და მათი დანიშნულება 🗃️**
+2. **Other Files and Their Purpose 🗃️**
 
 - ***dbmanager.py 🗄️***
 
-  - მართავს პროექტის "მონაცემთა ბაზას" (users.json, transactions.json, requests.json).
-  - უზრუნველყოფს მონაცემების შენახვას და განახლებას.
+  - Manages the project's "database" (`users.json`, `transactions.json`, `requests.json`).
+  - Ensures data storage and updates.
 
 - ***utils.py ⚙️***
-  - აქ თავმოყრილია რეგისტრაციისას რანდომ გენერაციისთვის საჭირო ფუნქციები და სხვადასხვა ფაილებისთვის საჭირო საერთო ლოგიკის მქონე ფუნქციები
+  - Contains functions for random data generation during registration and shared logic for various files.
 
-- ***login.py და register.py 👥***
+- ***login.py and register.py 👥***
 
-  - login.py: მომხმარებლის შესვლის ფუნქცია (ავტორიზაცია) და სასურველი სერვისის მიღება. 🔑
-  - register.py: მომხმარებლის რეგისტრაცია სისტემაში. 📝
+  - login.py: Handles user authentication and service selection. 🔑
+  - register.py: Handles user registration. 📝
 
 - ***main.py 🌐***
 
-  - ეს არის პროგრამის მთავარი ნაწილი, რომელიც აერთიანებს ყველა ფაილსა და ფუნქციას.
+  - The main file that integrates all components and functionalities.
 
 - ***GUIDE.md 📘***
 
-  - სახელმძღვანელო, რომელიც მომხმარებელს ეხმარება პროგრამის სწავლებაში და გამოყენებაში ანუ ფაილი, რომელსაც ახლა კითხულობთ! 💡 ის შეიცავს პროექტის სრულ აღწერას.
+  - A guide to help users understand and use the program, providing a complete project overview. 💡
 
 ---
 
-# დანართი
-📦 პროგრამის დასაწერად გამოყენებული მოდულები:
+# Appendix
+📦 Required Python modules for the project:
  - **python-dateutil 🗓️**
-   - ❗ საჭიროა მისი ინსტალაცია: pip install python-dateutil
-   - 📊 გამოყენებულია ფინანსების შესახებ ინფორმაციის მისაღებად სასურველ პერიოდში
+   - ❗ Needs to be installed: pip install python-dateutil
+   - 📊 Used for retrieving financial data within a specific period
  - **time ⏳**
-   - 🖥️ გამოყენებულია მოსახერხებელი აუთფუთისთვის
-   - ⏸️ პროგრამა ჩერდება ორი წამით სასურველი სერვისის განხორციელების შედეგის მიღებისას
+   - 🖥️ Used for convenient output formatting
+   - ⏸️ Delays program execution by two seconds to display service results
  - **datetime 📅**
-   - 🛠️ გამოყენებულია ბარათის მოქმედების ვადასთან სამუშაოდ
+   - 🛠️ Used for handling card expiration dates
  - **json 📂**
-   - 📋 გამოყენებულია მონაცემთა ბაზებისთვის
+   - 📋 Used for managing database files
 
 ---
 
-# კონტაქტი 
+# Contact 
 
-- 👤 **დეველოპერი:** ნია გოგილიძე  
-- 📧 **ელ.ფოსტა:** gogilidzenia@gmail.com
+- 👤 **Developer:** Nia Gogilidze  
+- 📧 **Gmail:** gogilidzenia@gmail.com
 - 🐱‍💻 **GitHub:** [niiass](https://github.com/niiass)  
-- 🌐 **სოციალური ქსელი:** [Nia Gogilidze](https://www.linkedin.com/in/nia-gogilidze/) 
+- 🌐 **Social Media:** [Nia Gogilidze](https://www.linkedin.com/in/nia-gogilidze/) 
 
 ---
-## 🌟 **eBank** – თქვენი ფინანსების მართვის სწრაფი და კომფორტული გზა! 🌟
+## 🌟 **eBank** – A fast and convenient way to manage your finances! 🌟
