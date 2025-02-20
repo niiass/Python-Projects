@@ -1,0 +1,86 @@
+{
+    "3312-9rpe-dj1f": {
+        "Balance": 1150,
+        "Cardholder": "Luka Berdzenadze",
+        "Card number": "4521 1553 3371 1878",
+        "Expiration date": "1/2029",
+        "CVV": 266,
+        "Account number": "GE58EB7781170957827357",
+        "Phone number": "597354821",
+        "Personal ID": "01789345132",
+        "Username": "lukabz",
+        "Password": "Luka2025"
+    },
+    "ijnp-9c8u-05nt": {
+        "Balance": 650,
+        "Cardholder": "Ana Chikvaidze",
+        "Card number": "4936 8431 6830 8554",
+        "Expiration date": "1/2029",
+        "CVV": 905,
+        "Account number": "GE40EB8965558410721192",
+        "Phone number": "599874321",
+        "Personal ID": "01452879365",
+        "Username": "anach",
+        "Password": "AnaC2612"
+    },
+    "2tj1-4vl3-klp1": {
+        "Balance": 882,
+        "Cardholder": "Mariam Katsadze",
+        "Card number": "4209 6013 5385 0586",
+        "Expiration date": "1/2029",
+        "CVV": 722,
+        "Account number": "GE58EB2005977725768106",
+        "Phone number": "598321456",
+        "Personal ID": "01234789654",
+        "Username": "mariamk",
+        "Password": "Mariko06"
+    },
+    "n5ye-mb4w-4z37": {
+        "Balance": 1000,
+        "Cardholder": "Giorgi Mikeladze",
+        "Card number": "4807 7413 3629 3036",
+        "Expiration date": "1/2029",
+        "CVV": 512,
+        "Account number": "GE45EB8829211087735050",
+        "Phone number": "597654987",
+        "Personal ID": "01678954321",
+        "Username": "giorgim",
+        "Password": "Giorgi12"
+    },
+    "nvrf-gtbx-3xb5": {
+        "Balance": 1138,
+        "Cardholder": "Elene Giorgadze",
+        "Card number": "4225 0656 3592 4610",
+        "Expiration date": "1/2029",
+        "CVV": 146,
+        "Account number": "GE86EB9310649424671981",
+        "Phone number": "598112334",
+        "Personal ID": "01543217896",
+        "Username": "eleneg",
+        "Password": "Elene123"
+    },
+    "q9ez-6ejc-rodl": {
+        "Balance": 940,
+        "Cardholder": "Niko Tavartkiladze",
+        "Card number": "4810 8776 2000 7082",
+        "Expiration date": "1/2029",
+        "CVV": 469,
+        "Account number": "GE63EB4678241339740257",
+        "Phone number": "599871010",
+        "Personal ID": "01897543216",
+        "Username": "nikot",
+        "Password": "Niko1234"
+    },
+    "ewbx-7l1a-fkxs": {
+        "Balance": 904,
+        "Cardholder": "Ana Lebanidze",
+        "Card number": "4678 3578 8183 8004",
+        "Expiration date": "1/2029",
+        "CVV": 160,
+        "Account number": "GE52EB3209216060471684",
+        "Phone number": "599636588",
+        "Personal ID": "47008992650",
+        "Username": "analeb",
+        "Password": "Analeb12"
+    }
+}
